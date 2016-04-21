@@ -1,0 +1,274 @@
+
+
+hr {margin: .3em 0 1em;background:#F1F1F1;height:1px;color:#F1F1F1;border:none}
+small, .small {font-size:11px}
+.clear {clear:both;position:relative;font-size:0;height:0;line-height:0} 
+br.clearer {clear: both;height:1px;line-height:1px;}
+.hidden {visibility:hidden} 
+.error {color:#c00}
+.success {color:#360}
+.highlight {color:#26568D}
+.subdued {color:#999}
+.disabled {color:#708090}
+.switch {float:right}
+
+
+
+/* =HEADINGS */
+h1 {font-size: 27px}
+h2 {font-size: 24px}
+h3 {font-size: 22px}
+h4 {font-size: 18px}
+h5 {font-size: 16px}
+h6 {font-size: 14px}
+
+
+
+/* =POPUP */
+body.popup {background: #fff;padding: 0 10px}
+body.popup h1 {margin: 10px 0 .4em}
+body.popup h2 {margin: 0 0 .4em}
+
+body.popup #content {margin:0;background:transparent;padding:0}
+
+
+.container-management #plp-wrap {background:none;padding:0}
+.container-management #plp-wrap .pagination, .container-management #plp-wrap #plp-nav {float:none;width:auto}
+.container-management #plp-content {margin:0}
+.container-management #plp-content iframe, .container-management #plp-content textarea#body {float:none;width:auto}
+.container-management #plp-wrap h1 {background:none;border:none}
+
+.relateditems-wrap {float:left;width:230px;padding-bottom: 10px}
+.relateditems-wrap h2 small {float:right;margin-top:3px;margin-right:8px}
+.relateditems-wrap select {width: 150px;float:left;margin: 3px 0}
+.relateditems-wrap input.f-submit {font-size:86%}
+.relateditems-wrap input.f-delete {font-size:86%;float:right;padding: 1px 8px;_padding: 1px 3px}
+
+.r-i-images {padding-right:40px}
+.r-i-files {}
+
+.relateditems-wrap a strong {position:absolute;left:-9999px}
+.relateditems-wrap a.moveup:link, .relateditems-wrap a.moveup:visited, .relateditems-wrap a.moveup:hover, .relateditems-wrap a.moveup:active {float:right;background:#fff url("images/sprites_icons.gif") no-repeat -100px -650px;display:block;height: 25px;width:30px}
+.relateditems-wrap a.moveup:hover, .relateditems-wrap a.moveup:active {background-position: -100px -600px}
+.relateditems-wrap a.movedown:link, .relateditems-wrap a.movedown:visited, .relateditems-wrap a.movedown:hover, .relateditems-wrap a.movedown:active {float:right;background:#fff url("images/sprites_icons.gif") no-repeat 0px -650px;display:block;height: 25px;width:30px}
+.relateditems-wrap a.movedown:hover, .relateditems-wrap a.movedown:active {background-position: 0px -600px}
+
+.teaser-wrap {clear:left;border-top: 1px solid #DEDEDE;padding-bottom: 10px;font-size:86%}
+.teaser-wrap .teaser-image {padding: 15px 0}
+.teaser-wrap .teaser-image h3 {}
+.teaser-wrap .teaser-image select {display:block;margin: 2px 0 8px;width: 150px;float:left}
+.teaser-wrap .teaser-image img {border: 1px solid #ccc;margin: -16px 0 5px 20px}
+.teaser-wrap .teaser-text {border-top: 1px solid #DEDEDE;padding: 15px 0}
+.teaser-wrap .teaser-text p {margin:0;font: bold 86% arial;padding-bottom: 20px}
+.teaser-wrap .teaser-text textarea {width: 100%}
+
+.f-source {clear:left;border-top: 1px solid #DEDEDE;padding: 10px 0 0}
+.f-source label:hover {background:none}
+.f-source input {margin-left: 7px}
+
+/* =GENERIC ADMIN */
+.gen-admin-filterby, 
+.gen-admin-filterby input,
+.gen-admin-action, 
+.gen-admin-action input {font-size: 90%;padding:1px 2px}
+
+.gen-admin-action {float:right}
+.gen-admin-action img {margin: 0 10px -7px 0}
+.utilBar label {display:inline}
+.gen-admin-filterby input.f-submit {margin-right:15px}
+
+.form-actions label { display:inline; }
+
+ul.object-overview-actions {margin-right: 130px}
+
+
+/* =DEFINITION LISTS */
+dl {margin: 0 0 1.5em}
+dt {clear:left;font-weight:bold;margin:3px 0}
+dd {margin:3px 0;padding:0}
+dd.thumbnail {float:left;width:100px;margin-right:6px;border: 1px solid #000;margin-bottom:0}
+dd.thumbnail img {display:block}
+
+dl.dl-style1 {border-top: 1px solid #fff;font-size:86%}
+	.tab-panes dl.dl-style1 {margin-right:140px}
+dl.dl-style1 dt {float:left;clear:left;width:130px;margin:0;_height:1.5em;min-height:1.5em;border:none}
+	.tab-panes dl.dl-style1 dt {width:28%}
+dl.dl-style1 dd {width: auto;margin: 0px 0px 0px 130px;border-bottom: 1px solid #fff;padding: 1px 0;_height:1.5em;min-height:1.5em}
+	.tab-panes dl.dl-style1 dd {margin-left:28%;_margin-left:20%}
+	
+dl.dl-style2 {font-size:86%;margin-top:10px}
+dl.dl-style2 dt {float:left;clear:left;width:70px;margin:0}
+dl.dl-style2 dd {margin:0;padding: 1px 0}
+
+/* =WIZARDS */
+.wizard-nav {float:right;width:110px}
+.wizard-nav a {display:block;width:100px;border: 1px solid #ccc;font-size:86%;margin: 0 0 3px}
+.wizard-nav a:link, .wizard-nav a:visited, .wizard-nav a:hover, .wizard-nav a:active {text-decoration:none;background-color:#fff;padding: 3px 5px}
+.wizard-nav a:hover {background-color:#FFF4E9;color:#E17000;border: 1px solid #E17000}
+.wizard-nav br {display:none}
+
+.icon {margin: 0 0 10px}
+
+body.container-management h1 {font: bold 135% arial,helvetica,sans-serif;height:auto;clear:both;_height:1em;min-height:1em}
+body.container-management h1 {padding: 10px 0 14px 40px;background: transparent url("images/container_edit_2.gif") no-repeat -10px -100px}
+
+
+ /* =DATA-TABLES */
+
+	table.objectAdmin {border-collapse:collapse;border:none;background:#fff;margin: .3em 0 1.5em;border-bottom: 1px solid #ccc;border-left: 1px solid #ccc}
+	table.objectAdmin table {font-size:95%}
+		table.objectAdmin caption {text-align:left;font: bold 145% arial;padding: 5px 10px;background:#fff}
+		table.objectAdmin th {color: #fff;border-top: 1px solid #A5B9D0;border-right: 1px solid #A5B9D0;text-align: left;padding: 2px 2px 2px 2px;background: #9EB4CC url("images/th_bg.gif") repeat-x 0 0; vertical-align: middle; font-weight: normal; font-face: tahoma,helvetica,sans-serif;}
+		table.objectAdmin th.order-asc {background-position: 100% -100px;padding-right:25px}
+		table.objectAdmin th.order-desc {background-position: 100% -200px;padding-right:25px}
+			table.objectAdmin th a:link, table.objectAdmin th a:visited, table.objectAdmin th a:hover, table.objectAdmin th a:active {color:#fff}
+			table.objectAdmin th.alt a:link, table.objectAdmin th.alt a:visited {color:#E17000}
+			table.objectAdmin th.alt a:hover, table.objectAdmin th.alt a:active {color:#fff}
+			table.objectAdmin th img {display:block;float:right;margin:0}
+		table.objectAdmin td {border-top: 1px solid #ccc;border-right: 1px solid #ccc;padding: 2px 10px; vertical-align: middle;}
+		table.objectAdmin th select, table.objectAdmin th select option {background-color: #FFFFFF !important; color: #324e7c !important;}
+		table.objectAdmin th.nobg {border:none;background:#fff}
+		table.objectAdmin tr.alt {background: #f1f1f1} 
+		table.objectAdmin tr.ruled {background: #c00} 
+		table.objectAdmin tr {background:#fff}
+		table.objectAdmin select.actionDropdown {width:90px;}
+		
+	table.layout, table.layout th, table.layout td {border:none;margin:0pt;padding:0pt;}
+		
+	table.table-2 {width:100%}
+	table.table-2 th {white-space:nowrap}
+	table.table-3 {width:500px}
+	table.table-4 {width:500px}
+		table.table-4 th.alt {background:#fff;color:#000;font-size:96%;border-top: 1px solid #ccc;border-right: 1px solid #ccc}
+		table.table-4 tr.alt th.alt {background:#f1f1f1}
+	table.table-5 {width:100%;border:none}
+	table.table-5 td {font-size: 110%;font-weight:bold}
+	table.table-5 td table, table.table-5 td table td {border:none}
+	table.table-6 {width:100%;margin: 20px 0;border:none}
+	table.table-6 td {font-size: 11px;font-weight:normal}
+	table.table-6 th {color:#666;background:#eee;border-top: 1px solid #fff;border-right: 1px solid #fff}
+	table.table-6 td table {width:100%}
+
+		div.nowrap, 
+		span.nowrap,  
+		li.nowrap,  
+		h3.nowrap,  
+		a.nowrap, 
+		.nowrap td, 
+		.nowrap th, 
+		td.nowrap, 
+		th.nowrap {
+			white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+		}
+		span.nowrap {
+			display:inline-block;
+		}
+
+ /* =OLD ADMIN CLASSES */
+.FormTitle {font-weight:bold;font-size:135%}
+table.FormTableClear {border: none}
+table.dataheader td {font-weight:bold;color: #fff;border-top: 1px solid #A5B9D0;border-right: 1px solid #A5B9D0;text-align: left;padding: 3px 10px;background: #9EB4CC url("images/th_bg.gif") repeat-x 0 0;font-size: 110%}
+table.BorderTable td, table.BorderTable th {border:none;padding:0} 
+
+
+ /* OBJECT ADMIN CLASSES */
+table.objectAdmin {}
+table.objectAdmin th, table.objectAdmin td {padding:3px;}
+
+ /* GENERAL ADMIN CLASSES */
+ul.inlinedocs {list-style:none;}
+ul.inlinedocs li {background-image:none; margin-bottom:20px;}
+
+
+img.overviewicon {
+	margin-right: 10px;
+}
+
+/* JQUERY-UI SPECIFIC MODIFICATIONS */
+ul.x-tab-strip{margin:0px;}
+ul.x-tab-strip li{padding:0px;}
+ul.x-tab-strip li a {padding:0px;}
+
+#webtopOverviewActions button h1,
+#webtopOverviewActions button h2 {
+	margin:0px;
+}
+
+#webtopOverviewActions button.primary {
+	width:180px;
+	height:100px;
+	margin-left:0px;
+}
+#webtopOverviewActions button.secondary {
+	width:180px;
+	min-height:50px;
+	margin-top:10px;
+	margin-left:0px;
+}
+
+.webtopOverviewStatusBox {
+	border:1px solid black;
+	padding:10px;
+	margin:0px 0px 10px 0px;
+}
+.webtopSummarySection {
+	border-bottom:2px solid #DFDFDF;
+	padding:0px 5px 15px 5px;
+	margin:10px 0px 10px 0px;
+}
+.webtopSummarySection h2 {
+	margin:10px 0px 0px 0px;
+	font-weight:bold;
+}
+
+.buttonHolder .fc-btn {
+  float:none;
+}
+
+
+table.object-admin-actions {
+	margin:0px;
+	padding:0px;
+	background:transparent;
+}
+table.object-admin-actions tr {
+	background:transparent;
+}
+
+
+table.object-admin-actions td a,
+table.object-admin-actions td a:link,
+table.object-admin-actions td a:visited,
+table.object-admin-actions td a:hover,
+table.object-admin-actions td a:active {
+	text-decoration:none; 				
+	float:left;	
+	color:#000;
+	padding:2px;	
+	line-height:16px;
+	display:block;
+	text-decoration:none;
+	border:1px solid transparent;
+} 
+
+table.object-admin-actions td a:hover {
+	background-color:#ffffff;
+	border:1px solid #B5B5B5;
+} 
+
+
+table.object-admin-actions td a .ui-icon {
+	float:left;
+	margin-right:2px;
+}
+
+.rowselected {
+	background-color: #F4F8FD;
+}
+
+/* WEBTOP OVERVIEW */
+.developer-actions { right:27px; position:absolute; }
+	.developer-actions a, .developer-actions .objectid { color:#333333; padding:0; display:inline-block; vertical-align:middle; margin-left:10px; cursor:pointer; }
+	.developer-actions a:hover { color:#333333; background-color:transparent; text-decoration:none; }
+	.developer-actions div.objectid { margin-right:40px\9; }
+	.comment { margin-left: 19px; }

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<webtop>
+	<section id="dashboard" sequence="1000" permission="MainNavMyFarcryTab" label="Dashboard" dynamicmenu="farWebtopDashboard.dynamicMenu">
+		<subsection id="webtopdashboard" sequence="100" typename="farWebtopDashboard" label="Dashboard" />
+	</section>
+	<section id="site" sequence="2000" permission="MainNavSiteTab" label="Site" description="Manage your website's menu structure and HTML content">
+		<subsection id="tree" sequence="1" permission="MainNavSiteTab" label="Navigation" typename="dmNavigation">
+			<menu id="nav" sequence="1" label="Navigation">
+				<menuitem id="home" sequence="1" label="Site Navigation" typename="dmNavigation" />
+				<menuitem id="utility" sequence="2" label="Utility Navigation" typename="dmNavigation" urlparameters="alias=hidden" />
+			</menu>
+		</subsection>
+		<subsection id="tools" sequence="2" label="Tools">
+			<menu id="site" sequence="1" label="Site Utilities">
+				<menuitem id="builder" sequence="1" label="Quick Site Builder" typename="dmNavigation" bodyview="webtopBodyQuickBuilder" />
+				<menuitem id="root" sequence="2" label="Site Tree Root" typename="dmNavigation" urlparameters="alias=root" />
+			</menu>
+		</subsection>
+	</section>
+	<section id="content" sequence="3000" permission="MainNavContentTab" label="Content">
+		<subsection id="mediacategories" sequence="10" label="Media &amp; Categories">
+			<menu id="MediaLibraryContent" sequence="20" label="Media Assets">
+				<menuitem id="listdmimage" sequence="10" label="Image Library" typename="dmImage" />
+				<menuitem id="listdmfile" sequence="20" label="Document Library" typename="dmFile" />
+			</menu>
+			<menu id="categorisation" sequence="40" permission="ContentCategorisationTab" label="Category Management">
+				<menuitem id="managekeywords" sequence="10" label="Manage Keywords" typename="dmCategory" />		
+				<menuitem id="quickcategorybuilder" sequence="20" label="Category Tree Quick Builder" typename="dmCategory" bodyview="webtopBodyQuickBuilder" />
+			</menu>
+			<menu id="undeletemenu" sequence="70" label="Content Archive">
+				<menuitem id="undelete" sequence="10" label="Undelete Content" typename="dmArchive" />
+			</menu>
+		</subsection>
+		<subsection id="container" sequence="100" label="Rules &amp; Containers">
+			<menu id="manage" sequence="60" label="Container Management">
+				<menuitem id="reflected" sequence="10" label="Reflected Containers" typename="farCOAPI" bodyview="webtopBodyReflectedContainers" />		
+			</menu>
+		</subsection>
+	</section>
+	<section id="admin" sequence="4000" permission="MainNavAdminTab" label="Admin" description="Configure and secure your website">
+		<subsection id="general" sequence="10" label="General Admin" permission="AdminGeneralTab">
+			<menu id="settings" sequence="10" label="Application Settings">
+				<menuitem id="listfarconfig" sequence="1" label="Configuration" typename="farConfig" />
+				<menuitem id="scheduledtasks" sequence="10" label="Scheduled Tasks" typename="dmCron" />
+				<menuitem id="webtopDashboards" sequence="20" label="Webtop Dashboards" type="farWebtopDashboard" bodyview="webtopBodyAdmin" />
+			</menu>
+			<menu id="systemstatus" sequence="220" label="System Status">
+				<menuitem id="systeminfo" sequence="40" label="System Information" typename="farCOAPI" bodyview="webtopBodySystemInfo" />
+				<menuitem id="objbrokersummary" sequence="50" label="Object Broker Status" typename="farCOAPI" bodyview="webtopBodyObjectBrokerReport" />
+			</menu>
+		</subsection>
+		<subsection id="security" sequence="50" permission="AdminGeneralTab" label="Users &amp; Roles" >
+			<menu id="farcryud" sequence="100" label="User Directory" permission="SecurityPolicyManagementTab">
+				<menuitem id="listprofiles" sequence="10" label="Users" typename="dmProfile" />
+				<menuitem id="listfargroup" sequence="20" label="Groups" typename="farGroup" />
+			</menu>
+			<menu id="rolesandpermissions" sequence="120" label="Roles &amp; Permissions" permission="SecurityPolicyManagementTab">
+				<menuitem id="roles" sequence="10" label="Roles" typename="farRole" />
+				<menuitem id="permissions" sequence="20" label="Permissions" typename="farPermission" />
+			</menu>
+			<menu id="securitylogs" sequence="130" label="Audit Reporting" permission="SecurityPolicyManagementTab">
+				<menuitem id="securitylogs" sequence="10" label="Security Logs" typename="farLog" bodyview="webtopBodyLogin" />
+				<menuitem id="useractivityovertime" sequence="30" label="User Activity Over Time" typename="farUser" bodyview="webtopBodyActivity" />
+			</menu>
+			<menu id="securitytools" sequence="150" label="Security Tools">
+				<menuitem id="upgradepasswords" sequence="10" label="Upgrade Password Security" link="/admin/customadmin.cfm?module=utilities/upgradePasswords.cfm" />
+			</menu>
+		</subsection>
+		<subsection id="coapi" sequence="100" permission="AdminCOAPITab" label="Developer Utilities" >
+			<menu id="application" sequence="10" label="Application">
+				<menuitem id="updateapp" sequence="10" label="Reload application" typename="UpdateApp" />
+				<!--<menuitem id="manageplugins" sequence="20" label="Add / Remove Plugins" link="/admin/manageplugins.cfm" />-->
+				<menuitem id="scopedump" sequence="30" label="Scope Dump" typename="farCOAPI" bodyview="webtopBodyScopeDump" />
+			</menu>
+			<menu id="coapitools" sequence="20" label="COAPI Tools">
+				<menuitem id="coapioverview" sequence="10" label="COAPI Content Types" typename="farCOAPI" />
+				<menuitem id="coapisqllog" sequence="20" label="SQL Log" typename="farCOAPI" bodyview="webtopBodySQLLog" />
+				<menuitem id="dbgateways" sequence="30" label="Database Gateways" typename="farCOAPI" bodyview="webtopBodyGateways" />
+			</menu>
+			<menu id="coapirepair" sequence="30" label="COAPI Repair Tools">
+				<menuitem id="rebuildtree" sequence="10" label="Rebuild Tree Metadata" link="/admin/rebuildTree.cfm" />
+				<menuitem id="fixrefObjects" sequence="21" label="Repair RefObjects" typename="fixRefObjects" bodyview="webtopBody" />
+			</menu>
+			<menu id="filetools" sequence="30" label="File Tools">
+				<menuitem id="cdnmigrationtool" sequence="50" label="CDN Migration Tool" link="/admin/customadmin.cfm?module=utilities/cdnmigrator.cfm" />
+			    <menuitem id="fixfilelocations" sequence="60" label="Fix File Locations" link="/admin/customadmin.cfm?module=utilities/fixfilelocations.cfm" />
+				<menuitem id="listfilelocations" sequence="70" label="List File Locations" link="/admin/customadmin.cfm?module=utilities/listfilelocations.cfm" />
+			</menu>
+			<menu id="menufumanagement" sequence="80" label="Friendly URL Tools">
+				<menuitem id="fumanagement" sequence="10" label="Inspect Friendly URLs" typename="farFU" />
+				<menuitem id="furebuild" sequence="20" label="Rebuild Friendly URLs" typename="farFU" bodyview="webtopBodyRebuild" />
+			</menu>
+			<menu id="emails" sequence="90" label="Test Email">
+				<menuitem id="sendemail" sequence="10" label="Send Test Email" link="/admin/customadmin.cfm?module=utilities/email.cfm" />
+			</menu>
+			<menu id="tasksqueue" sequence="100" label="Task Queue">
+				<menuitem id="queuethreads" sequence="10" label="Threads" typename="configTaskQueue" />
+				<menuitem id="queuejobs" sequence="20" label="Queued Jobs" typename="farQueueJob" />
+			</menu>
+			<menu id="skeleton" sequence="100" label="Skeleton">
+				<menuitem id="skeletonexport" sequence="10" label="Skeleton Export" typename="farSkeleton" />
+			</menu>
+		</subsection>
+	</section>
+</webtop>

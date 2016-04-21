@@ -1,0 +1,150 @@
+.ui-datepicker .ui-state-highlight {
+	border-color: #5F83B9;
+}
+.ui-datepicker .ui-slider .ui-slider-handle {
+	background-image: url(images/slider_handles.png)
+}
+.ui-tabs .ui-tabs-nav li a {
+	font-weight:normal;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, 
+.ui-tabs .ui-tabs-nav li.ui-state-disabled a, 
+.ui-tabs .ui-tabs-nav li.ui-state-processing a {
+	cursor: pointer;
+}
+
+.ui-tabs .ui-tabs-nav li a:hover,
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a:hover, 
+.ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a:hover {
+	background-image: none;
+	background-image: -webkit-gradient(linear, left top,left bottom, color-stop(0, #ECECEC),color-stop(1, #fff));
+	background-image: -moz-linear-gradient( center top, #ECECEC 0%, #fff 100%);
+} 
+
+
+.ui-dialog .ui-dialog-titlebar a:hover {
+	background-color: transparent;
+} 
+
+
+
+.ui-progressbar.small {
+	background: #fff url(images/progress_bar_10px.png) 0 -12px repeat-x;
+}
+.ui-progressbar.small .ui-progressbar-value {
+	background: #fff url(images/progress_bar_10px.png) 0 0 repeat-x;
+}
+
+
+	.ui-dialog {
+		max-width: 1024px;
+	}	
+	.ui-dialog.fullscreen {
+		max-width: 2040px;
+	}	
+	
+	.ui-widget {
+		font-size:1em;
+	}
+	
+	.ui-widget-content .ui-priority-primary,
+	.ui-priority-primary {
+		float:left;
+		margin-left:0px;
+		/*margin-right:5px;*/
+	}
+	.ui-widget-content .ui-priority-secondary,
+	.ui-priority-secondary {
+	
+	}
+	
+.ui-button {
+	margin-bottom: 5px;
+}
+	
+.ui-button.small .ui-button-text {
+	font-size:11px;
+	font-weight: normal;
+	padding-top:1px;
+	padding-bottom:1px;
+}	
+.ui-button.small.ui-button-icon-only .ui-icon {
+	margin-top:-9px;
+	margin-left:-9px;
+}	
+.ui-button.small.ui-button-icon-only {
+	width:20px;
+}	
+.ui-button.small.ui-button-icon-only .ui-button-text {
+	padding-left:0px;
+	padding-right:0px;
+	
+}	
+	
+/* PRIMARY BUTTONS
+----------------------------------*/
+.ui-priority-primary, .ui-widget-content .ui-priority-primary, .ui-widget-header .ui-priority-primary { border: 1px solid #9D9D9D; font-weight: normal; color: #313131; }
+.ui-priority-secondary, .ui-widget-content .ui-priority-secondary,  .ui-widget-header .ui-priority-secondary { opacity: 1; filter:Alpha(Opacity=100); font-weight: normal; }
+
+.ui-priority-primary .ui-icon {background-image: url(images/ui-icons_454545_256x240.png); }	
+	
+	
+.ui-state-default, 
+.ui-widget-content .ui-state-default, 
+.ui-widget-header .ui-state-default {
+	background: -webkit-gradient( linear, left bottom, left top, color-stop(1, #efefef), color-stop(0, #e0e0e0) );
+	background: -moz-linear-gradient( center top , #efefef, #e0e0e0	);
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {	
+	outline: none;
+	color: #193759; 
+	border-color: #7096ab;
+	background: -webkit-gradient( linear, left bottom, left top, color-stop(1, #CBDAEF), color-stop(0, #8DABD9) );
+	background: -moz-linear-gradient( center top , #CBDAEF, #8DABD9	);
+}
+
+.ui-state-default.ui-button.ui-priority-primary {
+	outline: none;
+	color: #193759; 
+	border-color: #7096ab;
+	background: -webkit-gradient( linear, left bottom, left top, color-stop(1, #CBDAEF), color-stop(0, #8DABD9) );
+	background: -moz-linear-gradient( center top , #CBDAEF, #8DABD9	);
+}
+.ui-state-default.ui-button.ui-priority-secondary
+.ui-button.ui-priority-secondary {
+	background: -webkit-gradient( linear, left bottom, left top, color-stop(1, #efefef), color-stop(0, #e0e0e0) );
+	background: -moz-linear-gradient( center top , #efefef, #e0e0e0	);
+}
+
+.ui-button.ui-state-hover { /*ui-priority-primary.*/
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.15), 0 1px 0 rgba(255,255,255,0.8) inset;
+	   -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.15), 0 1px 0 rgba(255,255,255,0.8) inset; 
+			box-shadow: 0 0 8px rgba(0, 0, 0, 0.15), 0 1px 0 rgba(255,255,255,0.8) inset;
+}
+
+.ui-widget-overlay {
+	background-color: #fff;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+	background: -webkit-gradient(linear,left bottom,left top,color-stop(1,#F0F0F0),color-stop(0,#E8E8E8));
+	background: -moz-linear-gradient(center top,#F0F0F0,#E8E8E8);
+	border-bottom: 1px solid #B6B6B6;
+}
+
+a.ui-datepicker-next-hover,
+a.ui-datepicker-prev-hover {
+	background-color:transparent;
+}
+
+.ui-dialog.nested {
+	border:1px solid #ddd;
+	-webkit-box-shadow: none;
+	   -moz-box-shadow: none;
+	        box-shadow: none;
+}
+.ui-dialog.nested .ui-dialog-titlebar {
+	opacity: 0.2;
+}

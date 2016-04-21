@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<webtop>
+	<section mergeType="merge" id="content">
+		<subsection id="farcrycmssubsection" sequence="5" label="CMS Content">
+			<menu id="farcrycmsmenu" sequence="10" label="Content Types">
+				<menuitem id="listdmnews" sequence="10" label="News" typename="dmnews" />
+				<menuitem id="listdmevent" sequence="20" label="Events" typename="dmevent" />
+				<menuitem id="listdmfact" sequence="40" label="Facts" typename="dmfacts" />
+				<menuitem id="listfarimagegallery" sequence="50" label="Image Galleries" typename="farImageGallery" />
+			</menu>
+			<menu id="farcryfeedbackmenu" sequence="20" label="Feedback">
+				<menuitem id="listfarfeedback" sequence="10" label="Feedback" typename="farfeedback" />
+			</menu>
+		</subsection>
+	</section>
+</webtop>
